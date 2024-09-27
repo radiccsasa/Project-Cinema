@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: #3e3232;
+}
+
+.bodydiv {
+  z-index: 0;
+}
+h3 {
+  font-size: clamp(12px, 2vw, 27px);
+}
+
+.submitMessage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e1e1e;
+  position: absolute;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  filter: none;
+  z-index: 9999;
+}
+
+body.blur-active .bodydiv {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.submitMessage p {
+  white-space: pre-line;
+}
+
+.seat {
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-radius: 0 0 20% 20%;
+  width: 100%;
+  height: 100%;
+  gap: 1px;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(12px, 2vw, 24px);
+}
+
+.seat:hover {
+  transform: scale(110%) !important;
+  background-color: lightgreen !important;
+}
+
+.logo {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+.navbar {
+  overflow: hidden;
+  align-items: center;
+  gap: 1.6rem;
+  display: flex;
+  width: 100%;
+  background-color: #7e6363;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.upper {
+  display: flex;
+}
+
+.content-wrapper {
+  padding: 40px;
+  max-width: 100%;
+  margin: 3.2%;
+  border-radius: 50px;
+  background-color: #7e6363;
+}
+
+.seats-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.num ul,
+.abc ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.abc {
+  left: -25px;
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+}
+
+.num {
+  top: -25px;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.abc ul {
+  flex-direction: column;
+  height: 100%;
+}
+
+.seats {
+  z-index: 10000000000;
+  display: grid;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  grid-template-columns: repeat(8, minmax(10%, 12.5%));
+  grid-auto-rows: 1fr;
+
+  grid-gap: 10px;
+}
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  justify-content: center;
+}
+
+.info-seat {
+  width: 50px;
+  height: 50px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-radius: 0 0 20% 20%;
+  gap: 1px;
+  transition: all 200ms ease;
+}
+
+.info div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#oznaceno {
+  background-color: greenyellow;
+}
+
+#zauzeto {
+  background-color: rgb(255, 94, 94);
+}
+
+.order {
+  gap: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.film img {
+  width: 30%;
+  object-fit: contain;
+}
+
+.ticket-number {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ticket-number div {
+  font-size: clamp(12px, 2vw, 27px);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: rgb(255, 94, 94);
+  border: 1px solid black;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  font-size: clamp(12px, 2vw, 27px);
+}
+
+.email-form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-form input {
+  width: 90%;
+  height: 20px;
+  font-size: 16px;
+  color: black;
+}
+
+.submit {
+  padding: 10px 20px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}

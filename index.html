@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="divSubmitMessage" class="submitMessage">
+      <p id="submitMessage"></p>
+    </div>
+
+    <div class="bodydiv" id="body">
+      <div class="navbar">
+        <div class="logo">
+          <img src="download.jpeg" width="100px" height="100px" alt="" />
+        </div>
+
+        <ul>
+          <li>Films</li>
+          <li>Theaters</li>
+          <li>Support</li>
+        </ul>
+      </div>
+
+      <!-- <div class="seat"></div> -->
+
+      <div class="content-wrapper">
+        <div class="upper">
+          <div class="seats-wrapper">
+            <div class="num">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+              </ul>
+            </div>
+            <div class="abc">
+              <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+              </ul>
+            </div>
+            <div class="seats">
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div
+                class="seat"
+                style="background-color: rgb(255, 94, 94) !important"
+                onclick="selectSeat(this)"
+              ></div>
+              <div
+                class="seat"
+                style="background-color: rgb(255, 94, 94) !important"
+                onclick="selectSeat(this)"
+              ></div>
+              <div
+                class="seat"
+                style="background-color: rgb(255, 94, 94) !important"
+                onclick="selectSeat(this)"
+              ></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+              <div class="seat" onclick="selectSeat(this)"></div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="film">
+              <img src="/movielogo.jpg" alt="" />
+            </div>
+
+            <h2>Ticket price: 10$</h2>
+
+            <div class="ticket-number">
+              <h3>Number of tickets:</h3>
+
+              <div>
+                <button type="button" class="btn" id="decrease">-</button>
+                <span id="number">1</span>
+                <button type="button" class="btn" id="increase">+</button>
+              </div>
+            </div>
+
+            <div class="payment">
+              <h3>Bill :</h3>
+              <span id="bill">10$</span>
+            </div>
+
+            <form class="email-form">
+              <label for="email">Tickets will be sent on email:</label>
+              <input type="email" name="email" class="input" id="email" />
+              <button
+                type="submit"
+                class="btn submit"
+                onclick="onSubmit(event)"
+              >
+                Reserve and buy
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <div class="info-seat" id="oznaceno"></div>
+            <p>Marked seat</p>
+          </div>
+          <div>
+            <div class="info-seat" id="zauzeto"></div>
+            <p>Occupied seat</p>
+          </div>
+          <div>
+            <div class="info-seat"></div>
+            <p>Free seat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
